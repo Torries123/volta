@@ -1,0 +1,52 @@
+/* ul.info{
+
+
+} */
+/* .info{
+    display: flex;
+    color: black;
+    background-color: #fff;
+} */
+/* 选择子项目 */
+ul.info>li {
+    list-style: none;
+    /* color: aqua; */
+
+
+}
+
+/* ul.info>li li{
+    list-style: none
+} */
+/* 选择子项目中的第二个 */
+ul.info>li li:nth-child(2) {
+    list-style: none
+}
+
+ol li a {
+    text-decoration: none;
+}
+
+ol li a[target='_blank'] {
+    color: green;
+}
+
+ol li a[href="https://www.google.com/"] {
+    background-color: aquamarine;
+}
+/* 头部选择器 */
+ol li a[href*="google"]{
+    color: pink;
+}
+/* 
+ol li a[href^="https"]{
+    color: rgb(19, 10, 94);
+} */
+/* 尾部选择器 */
+ol li a[href$=".com.au"]{
+    background-color: rgb(179, 42, 179);
+}
+/* 合并选择器 */
+ol li a[href*="google"][href$="com.au"]{
+    font-style: italic;
+}
